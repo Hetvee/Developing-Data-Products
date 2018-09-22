@@ -1,0 +1,19 @@
+---
+title: "Week 3 Assignment"
+author: "Hetvee Sanjay Patel"
+date: "9/22/2018"
+always_allow_html: yes
+output: ioslides_presentation
+---
+
+## Plotly Plot
+
+```{r, echo=FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+library(ggplot2)
+plot_ly(USArrests, x=~Murder, y= ~Assault, type="scatter", size= ~UrbanPop, color= ~Assault)
+
+```
+
+##Thanks
+
